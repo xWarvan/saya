@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- SEO Meta Tags -->
+    <title>Warvan | Web3 & Blockchain Expert | Decentralization Advocate</title>
+    <meta name="description" content="Web3 & Blockchain enthusiast specializing in decentralized systems, cryptography, and digital freedom. Exploring the future of trustless technologies and open-source innovation.">
+    <meta name="keywords" content="Web3, Blockchain, Cryptography, Decentralization, Smart Contracts, DAO, NFT, DeFi, Digital Freedom">
+    <meta name="author" content="Warvan">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://0xwarvan.ar.io/">
+    <meta property="og:title" content="Warvan | Web3 & Blockchain Expert">
+    <meta property="og:description" content="Web3 & Blockchain enthusiast specializing in decentralized systems and digital freedom.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://0xwarvan.ar.io/">
+    <meta property="twitter:title" content="Warvan | Web3 & Blockchain Expert">
+    <meta property="twitter:description" content="Web3 & Blockchain enthusiast specializing in decentralized systems and digital freedom.">
+    <meta property="twitter:image" content="https://yourdomain.com/images/og-image.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7c3aed">
+    <meta name="msapplication-TileColor" content="#1a1a1a">
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+
+
+    <style>
+:root {
+    --glass-bg: rgba(26, 26, 26, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+.hero {
+            margin-top: -80px;
+            padding-top: 160px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                background: rgba(26, 26, 26, 0.95);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1a1a1a;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            height: 60px;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            color: #7c3aed;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo:hover {
+            opacity: 0.8;
+        }
+
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #7c3aed;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Navbar Desktop */
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            /* Navbar Mobile */
+            .menu-toggle {
+                display: block;
+                z-index: 1000;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a1a1a;
+                flex-direction: column;
+                padding: 1rem;
+                text-align: center;
+                border-bottom: 1px solid #333;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                margin: 0.5rem 0;
+                padding: 0.8rem;
+                background: #252525;
+                border-radius: 6px;
+                width: 100%;
+            }
+
+            .nav-links a:hover {
+                background: #2d2d2d;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            background: linear-gradient(45deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+
+        .hero-content {
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            background: linear-gradient(45deg, #7c3aed, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #b3b3b3;
+            margin-bottom: 2rem;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background: #7c3aed;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+        }
+
+        .cta-button:hover::after {
+            left: 150%;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #252525;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: all 0.5s ease;
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #7c3aed, #a855f7, #7c3aed);
+            z-index: -1;
+            border-radius: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card h3 {
+            color: #7c3aed;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #b3b3b3;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .menu-toggle {
+                display: block;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+
+            .menu-toggle.active {
+                transform: rotate(90deg);
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a1a1a;
+                flex-direction: column;
+                padding: 1rem;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                margin: 1rem 0;
+                padding: 0.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Navbar Transparan */
+        nav {
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        nav.scrolled {
+            background-color: rgba(26, 26, 26, 0.9);
+            border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+        }
+
+        /* Hero Section Adjustment */
+        .hero {
+            margin-top: -80px;
+            padding-top: 160px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                background: rgba(26, 26, 26, 0.95);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+        }
+
+        /* Scroll Animation */
+        .card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">Warvan</a>
+            <div class="menu-toggle">㊂</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="https://github.com/xWarvan">Github</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Decentralizing the Future of Digital Freedom</h1>
+                <p>Blockchain enthusiast exploring the intersection of cryptography, decentralized systems, and open-source innovation.</p>
+                <a href="https://x.com/0xWarvan" class="cta-button">Connect with Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="about">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">Core Principles</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Decentralization</h3>
+                    <p>Advocating for distributed systems that empower users and eliminate single points of failure.</p>
+                </div>
+                <div class="card">
+                    <h3>Cryptography</h3>
+                    <p>Implementing cutting-edge security protocols to protect digital sovereignty and privacy.</p>
+                </div>
+                <div class="card">
+                    <h3>Innovation</h3>
+                    <p>Pushing the boundaries of Web3 technology through continuous research and development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Scroll Animation for Cards
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.card').forEach(card => {
+            cardObserver.observe(card);
+        });
+
+        // Smooth Scroll for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Scroll Effect untuk Navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
